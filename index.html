@@ -118,17 +118,6 @@
             margin-bottom: 26px;
         }
 
-        .two-column-sections {
-            display: flex;
-            gap: 30px;
-            margin-bottom: 26px;
-        }
-
-        .two-column-sections .section {
-            flex: 1;
-            margin-bottom: 0;
-        }
-
         .section-header {
             display: flex;
             align-items: center;
@@ -462,14 +451,6 @@
 
         /* Responsive */
         @media (max-width: 768px) {
-            .two-column-sections {
-                flex-direction: column;
-            }
-
-            .two-column-sections .section {
-                margin-bottom: 26px;
-            }
-
             .header {
                 flex-direction: column;
                 text-align: center;
@@ -613,49 +594,27 @@
             </div>
         </div>
 
-        <!-- Education and Experience Sections -->
-        <div class="two-column-sections">
-            <!-- Education Section -->
-            <div class="section">
-                <div class="section-header" onclick="toggleSection(this)">
-                    <h2 class="section-title">Education</h2>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
-                </div>
-                <div class="section-content">
-                    <div class="education-item">
-                        <img src="images/SJTULogo.png" alt="Shanghai Jiao Tong University" class="edu-logo">
-                        <div class="edu-content">
-                            <h3>Shanghai Jiao Tong University</h3>
-                            <p>Ph.D. in Electronic Information</p>
-                            <p>2025 - Present</p>
-                        </div>
-                    </div>
-                    <div class="education-item">
-                        <img src="images/JLULogo.png" alt="Jilin University" class="edu-logo">
-                        <div class="edu-content">
-                            <h3>Jilin University</h3>
-                            <p>Bachelor's Degree in Biomedical Engineering</p>
-                            <p>2021 - 2025</p>
-                        </div>
-                    </div>
-                </div>
+        <!-- Education Section -->
+        <div class="section">
+            <div class="section-header" onclick="toggleSection(this)">
+                <h2 class="section-title">Education</h2>
+                <i class="fas fa-chevron-down toggle-icon"></i>
             </div>
-
-            <!-- Experience Section -->
-            <div class="section">
-                <div class="section-header" onclick="toggleSection(this)">
-                    <h2 class="section-title">Experience</h2>
-                    <i class="fas fa-chevron-down toggle-icon"></i>
+            <div class="section-content">
+                <div class="education-item">
+                    <img src="images/SJTULogo.png" alt="Shanghai Jiao Tong University" class="edu-logo">
+                    <div class="edu-content">
+                        <h3>Shanghai Jiao Tong University</h3>
+                        <p>Ph.D. in Electronic Information</p>
+                        <p>2025 - Present</p>
+                    </div>
                 </div>
-                <div class="section-content">
-                    <div class="education-item">
-                        <img src="images/JDLogo.jpg" alt="JD Technology" class="edu-logo">
-                        <div class="edu-content">
-                            <h3>JD Technology (京东科技)</h3>
-                            <p>Algorithm Intern (算法实习生)</p>
-                            <p>2025.09 - Present</p>
-                            <p>Research Focus: Vision-Language-Action (VLA), Post-training RL</p>
-                        </div>
+                <div class="education-item">
+                    <img src="images/JLULogo.png" alt="Jilin University" class="edu-logo">
+                    <div class="edu-content">
+                        <h3>Jilin University</h3>
+                        <p>Bachelor's Degree in Biomedical Engineering</p>
+                        <p>2021 - 2025</p>
                     </div>
                 </div>
             </div>
@@ -734,13 +693,12 @@
                         <img src="images/Exo-ViHa.png" alt="Exo-ViHa">
                     </div>
                     <div class="pub-content">
-                        <span class="badge">IROS 2025</span>
+                        <span class="badge">IROS 2026</span>
                         <div class="pub-title">
-                            <span class="pub-title-highlight">Exo-ViHa:</span>
-                            <span class="pub-title-fade">A Cross-Platform Exoskeleton System with Visual and Haptic Feedback for Efficient Dexterous Skill Learning</span>
+                            <span class="pub-title-fade">Self-Supervised Mask-Aware Transformers for Fault-Tolerant FBG Force Sensing in Minimally Invasive Surgical Robotics</span>
                         </div>
-                        <div class="pub-authors">Xintao Chao*, Shilong Mu*, <strong>Yushan Liu</strong>, Shoujie Li, Chuqiao Lyu, Xiao-Ping Zhang, Wenbo Ding†</div>
-                        <div class="pub-venue">2025 IEEE International Conference on Intelligent Robots and Systems (IROS), Hangzhou, China</div>
+                        <div class="pub-authors"><strong>Peibo Sun*</strong>, Shiyuan Dong*, Shucheng Ye, Jianrong Cai, <strong>Yushan Liu</strong>, Hongen Liao, Tianqi Huang, Fang Chen†</div>
+                        <div class="pub-venue">2026 IEEE International Conference on Intelligent Robots and Systems (IROS), Hangzhou, China</div>
                         <div class="pub-links">
                             <a href="https://arxiv.org/pdf/2503.01543"><i class="fas fa-file-pdf"></i> PDF</a>
                             <a href="https://exo-viha2025.github.io/"><i class="fas fa-globe"></i> Website</a>
@@ -748,15 +706,6 @@
                     </div>
                 </div>
 
-                <h3 class="sub-section-title">Other Publications</h3>
-
-                <ul class="other-pub-list">
-                    <li>
-                        <div class="other-pub-title">Self-Supervised Mask-Aware Transformers for Fault-Tolerant FBG Force Sensing in Minimally Invasive Surgical Robotics</div>
-                        <div class="other-pub-authors">Peibo Sun, Shiyuan Dong, Shucheng Ye, Jianrong Cai, <strong>Yushan Liu</strong>, Hongen Liao, Tianqi Huang, Fang Chen†</div>
-                        <div class="other-pub-venue">Under Review</div>
-                    </li>
-                </ul>
                 
             </div>
         </div>
