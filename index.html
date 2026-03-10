@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yushan Liu - Personal Homepage</title>
+    <title>Peibo Sun - Personal Homepage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -518,29 +518,6 @@
             scroll-behavior: smooth;
         }
 
-        /* Toast notification */
-        .toast {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #2563eb;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 6px;
-            font-size: 15px;
-            font-weight: 500;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            opacity: 0;
-            transition: opacity 0.3s ease;
-            z-index: 1000;
-            pointer-events: none;
-        }
-
-        .toast.show {
-            opacity: 1;
-        }
-
         /* Sub-section headers */
         .sub-section-title {
             font-family: 'Lora', Georgia, serif;
@@ -609,17 +586,17 @@
         <!-- Header -->
         <div class="header">
             <div class="header-content">
-                <h1 class="name">Yushan Liu (刘昱杉)</h1>
-                <p class="title" style="font-weight: 600;">Master's Student  <span style="color: rgb(130, 49, 142);">@Tsinghua SIGS</span></p>
-                <p class="title">Embodied Intelligence</p>
+                <h1 class="name">Peibo Sun (孙培博)</h1>
+                <p class="title" style="font-weight: 600;">PhD Student</p>
+                <p class="title">School of Biomedical Engineering, Shanghai Jiao Tong University</p>
+                <p class="title">Medical Robotics, Computer Vision, AI, Deep Learning</p>
                 <div class="contact-links">
-                    <a href="mailto:liu-ys24@mails.tsinghua.edu.cn"><i class="fas fa-envelope"></i> Email</a>
-                    <a href="https://github.com/scpsyl"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="javascript:void(0);" onclick="copyWechat()"><i class="fab fa-weixin"></i> WeChat</a>
+                    <a href="mailto:sun_pb@sjtu.edu.cn"><i class="fas fa-envelope"></i> Email</a>
+                    <a href="https://github.com/spbnb"><i class="fab fa-github"></i> GitHub</a>
                 </div>
             </div>
             <div class="header-image">
-                <img src="images/cartoon.jpeg" alt="Yushan Liu" class="profile-img">
+                <img src="images/cartoon.jpeg" alt="Peibo Sun" class="profile-img">
             </div>
         </div>
 
@@ -631,7 +608,7 @@
             </div>
             <div class="section-content">
                 <div class="bio">
-                    <p>I am <strong>Yushan Liu (刘昱杉)</strong>, an IEEE Student Member. I received my B.S. degree in Electronic Information Science and Technology from <a href="https://www.jlu.edu.cn/">Jilin University</a> in 2024. I am currently pursuing an M.S. degree in Data Science and Information Technology at the Smart Sensing and Robotics group <a href="https://ssr-group.net/index.html">(SSR Group)</a> of <a href="https://www.sigs.tsinghua.edu.cn/">Shenzhen International Graduate School</a>, <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>. My research interest is Embodied Intelligence under the guidance of <a href="https://ssr-group.net/">Prof. Wenbo Ding</a> and <a href="https://scholar.google.com/citations?user=1fzb_z8AAAAJ&hl=zh-CN&oi=sra">Prof. Xiao-Ping Zhang</a>.</p>
+                    <p>I am <strong>Peibo Sun (孙培博)</strong>, an IEEE Student Member. I received my B.S. degree in Biomedical Engineering from <a href="https://www.jlu.edu.cn/">Jilin University</a> in 2025. I am currently pursuing an M.S. degree in Data Science and Information Technology at the Smart Sensing and Robotics group <a href="https://ssr-group.net/index.html">(SSR Group)</a> of <a href="https://www.sigs.tsinghua.edu.cn/">Shenzhen International Graduate School</a>, <a href="https://www.tsinghua.edu.cn/">Tsinghua University</a>. My research interest is Embodied Intelligence under the guidance of <a href="https://ssr-group.net/">Prof. Wenbo Ding</a> and <a href="https://scholar.google.com/citations?user=1fzb_z8AAAAJ&hl=zh-CN&oi=sra">Prof. Xiao-Ping Zhang</a>.</p>
                 </div>
             </div>
         </div>
@@ -817,20 +794,9 @@
             </div>
         </div>
 
-        <!-- Visit Map Section -->
-        <div class="section">
-            <div class="section-header" onclick="toggleSection(this)">
-                <h2 class="section-title">Visit Map</h2>
-                <i class="fas fa-chevron-down toggle-icon"></i>
-            </div>
-            <div class="section-content">
-                <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=_rCgAn3iSBnslxhy72IQEy5BMjTZf11EBkiqtXQ7Tp4&cl=ffffff&w=a"></script>
-            </div>
-        </div>
-
         <!-- Footer -->
         <div class="footer">
-            <p>© 2025 Yushan Liu | Inspired by <a href="https://jonbarron.info/">Jon Barron</a></p>
+            <p>© 2025 Peibo Sun | Inspired by <a href="https://jonbarron.info/">Jon Barron</a></p>
         </div>
     </div>
 
@@ -839,30 +805,6 @@
             const content = header.nextElementSibling;
             header.classList.toggle('collapsed');
             content.classList.toggle('collapsed');
-        }
-
-        function copyWechat() {
-            const wechatId = 'Lys13125887750';
-            navigator.clipboard.writeText(wechatId).then(() => {
-                showToast('WeChat ID copied: ' + wechatId);
-            }).catch(() => {
-                showToast('Failed to copy WeChat ID');
-            });
-        }
-
-        function showToast(message) {
-            let toast = document.getElementById('toast');
-            if (!toast) {
-                toast = document.createElement('div');
-                toast.id = 'toast';
-                toast.className = 'toast';
-                document.body.appendChild(toast);
-            }
-            toast.textContent = message;
-            toast.classList.add('show');
-            setTimeout(() => {
-                toast.classList.remove('show');
-            }, 2000);
         }
     </script>
 </body>
